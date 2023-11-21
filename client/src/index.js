@@ -10,7 +10,9 @@ import $ from 'jquery';
 window.$ = window.jQuery = $;
 import {App1, App2, App3} from './components/App';
 import LifeCycle from './components/LifeCycle';
-
+import EventHandle from './components/EventHandle';
+import LoopComponent from './components/LoopComponent';
+import FormComponent from './components/FormComponent';
 import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -23,10 +25,13 @@ let account = {
 root.render(
   <React.StrictMode>
     <div className='container'>
-      <App1 number="Sara"/>
+      {/* <App1 number="Sara"/>
       <App2 name="Nabin"/>
-      <App3 account={account} />
-      <LifeCycle />
+      <App3 account={account} /> */}
+      {/* <LifeCycle /> */}
+      {/* <EventHandle /> */}
+      {/* <LoopComponent /> */}
+      <FormComponent />
     </div>
   </React.StrictMode>
 );
